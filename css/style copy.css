@@ -1,0 +1,23 @@
+.quadrado {
+  width: auto;
+  display: flex;
+  align-items: right;
+  justify-content: center;
+margin-left: 300px;
+    width: 500px;
+    height: 100px;
+    background-color: black;
+    border-radius: 10px;
+   
+  }
+  .quadrado span {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    align-items: center
+  }
+  .menucontainer{
+    margin-left: 300px;
+    margin-top: 10px;
+  }

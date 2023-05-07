@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <link rel="stylesheet" href="css/login.css"> 
+        <link rel="icon" href="img/Logo Gamemania (2).png" sizes="50x50">
+        <link rel="stylesheet" type="text/css" href="bootstrap-5.0.2-dist/css/bootstrap.min.css"> 
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title> GameMania - Loja Virtual </title>
+        <meta name="description" content="Loja Virtual GameMania"/>
+        <meta name="keywords" content="Games, Jogos, Informática, Notebooks"/>
+        <meta name="author" content="Lárus Baptista"/>
+        <!--base href="http://www.gamemania.com.br/" target="_blank"/-->
+        
+    </head>
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Exemplo de página de login</title>
+        <script>
+            function verificarLogin() {
+                // Obter os valores dos campos de entrada
+                var nomeUsuario = document.getElementById("nome-usuario").value;
+                var senha = document.getElementById("senha").value;
+    
+                // Verificar se os campos estão vazios
+                if (nomeUsuario === "" || senha === "") {
+                    document.getElementById("mensagem").innerHTML = "Por favor, preencha todos os campos.";
+                    return;
+                }
+    
+                // Verificar se as informações de login estão corretas
+                if (nomeUsuario === "usuario" && senha === "senha") {
+                    // Redirecionar para outra página
+                    window.location.href = "index.html";
+                } else {
+                    document.getElementById("mensagem").innerHTML = "Nome de usuário ou senha incorretos.";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Entre com suas informações de login</h1>
+        <label for="nome-usuario">Nome de usuário:</label>
+        <input type="text" id="nome-usuario"><br><br>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha"><br><br>
+        <button type="button" onclick="verificarLogin()">Enviar</button>
+        <div id="mensagem"></div>
+    </body>
+    </html>
+    <script type="text/javascript" src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>               
+</html>
+            
+                

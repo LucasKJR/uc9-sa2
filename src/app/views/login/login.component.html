@@ -1,0 +1,27 @@
+
+    <main>
+        <form class="container_login" #userform="ngForm" (ngSubmit)="receberDados()">
+
+            <div id="login_cadastro" >
+                <div class="cadastro cores_letras">
+                    <h2>LOGIN</h2>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="campo-email" name="email" placeholder=" Ex.: email@email.com"
+                    [(ngModel)]="userModel.email" ><br> 
+                </div> 
+
+                <div >                       
+                    <label for="senha">Senha:</label><br>
+                    <input type="password" id="password" name="password" placeholder="Sua senha aqui ... " 
+                    [(ngModel)]="userModel.password"><br><br>                         
+                </div>
+                <input id="botao-enviar" type="submit" value="Fazer Login">
+            </div>
+        </form>
+        <!-- <p id="'mensagem" *ngIf=" mensagem != '' ">Teste</p> -->
+    </main>
+                     
+          
+
+
+ 
